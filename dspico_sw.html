@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DSpico - Software | LNH Team</title>
+
+  <!-- Material Symbols -->
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&display=swap" rel="stylesheet">
+
+  <!-- Font of DSpico logo and for the content of webpage -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS externo -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+<header class="navbar">
+  <div class="nav-left">
+    <img src="assets/lnh-logo.png" alt="Logo" class="logo-icon1">
+  </div>
+  <nav class="nav-links">
+    <a href="index.html" title="Home"><span class="material-symbols-outlined nav-icon">home</span></a>
+    <a href="dspico_hw.html" title="DSpico Hardware"><span class="material-symbols-outlined nav-icon">memory</span></a>
+    <a href="dspico_sw.html" title="DSpico Software"><span class="material-symbols-outlined nav-icon">folder_code</span></a>
+  </nav>
+</header>
+
+<div class="hero">
+    <div class="logo-title">
+        <img src="assets/dspico-logo.png" alt="DSpico logo" class="logo-icon2">
+        <h1>DSpico</h1>
+    </div>
+
+  <!-- Buttons of top of webpage -->
+  <div class="buttons">
+
+    <a href="dspico_hw.html" class="btn secondary">
+        <img src="assets/dspico-logo.png" style="width: auto; height: 50px; vertical-align: middle; border-radius: 0;">DSpico Hardware
+    </a>
+
+    <a href="dspico_sw.html" class="btn secondary">
+      <img src="assets/picolauncher-logo.png" style="width: auto; height: 50px; vertical-align: middle; border-radius: 0;">DSpico Software
+    </a>
+
+  </div>
+</div>
+
+
+
+
+<!-- Picolauncher Section -->
+<section id="pico-launcher">
+  <div class="container">
+    <div class="logo-title">
+      <img src="assets/picolauncher-logo.png" alt="Pico Launcher Logo" class="logo" />
+      <h2>Pico Launcher</h2>
+    </div>
+
+    <p class="lead">
+      The app launcher for DS(i) flashcarts designed with modern simplicity and powered by Material Design 3.
+      Compatible with many types of flashcarts, including the DSpico.
+    </p>
+
+    <img src="assets/launcher-screen.png" alt="Launcher Screenshot" class="launcher-image" />
+    <p class="description">
+      Customize your launcher with fresh themes and background music.
+      Choose how you navigate: horizontal or vertical grid, banner list or cover flow.
+    </p>
+    <div>
+      <img src="assets/carrousel.png" alt="Launcher Screenshot" class="launcher-image" />
+      <img src="assets/HorizontalCustom.png" alt="Launcher Screenshot" class="launcher-image" />
+    </div>
+    <p class="description">
+      Any file can have a cover! Pico Launcher also supports setting default apps per file extension such that any type of file can be launched using your favorite homebrew apps!
+    </p>
+    <p class="tagline">Fresh. Fast. Beautiful.</p>
+    <p class="final-line">It's time to give your flashcart menu the upgrade it deserves.</p>
+
+    <div class="buttons">
+      <a href="https://github.com/LNH-team/pico-launcher" class="btn build-btn">
+        <img src="assets/github-mark.png" style="width: 24px; height: 24px; vertical-align: middle; filter: invert(1);" alt="GitHub">
+        <span class="btn-text">Repository</span>
+      </a>
+    </div>
+
+    <div class="build-content hidden-content"></div>
+  </div>
+</section>
+
+
+<!-- Picoloader Section -->
+<section id="pico-loader">
+  <div class="container">
+    <div class="logo-title">
+      <h2 style="text-align: center;">
+        <img src="assets/picoloader-logo.png" style="width: auto; height: 50px; vertical-align: middle;">
+        Pico Loader
+      </h2>
+    </div>
+    <p class="lead">The high-speed DS(i) app loader engineered for DSpico and compatible with many other existing flashcarts for DS(i).
+    </p>
+    <img src="assets/loader.png" alt="Loader" class="responsive-img" />
+    <p class="description">
+      From the moment you launch it, Pico Loader delivers near-instant access to your apps. Giving your DS(i) a smoother, snappier experience than ever before.
+    </p>
+    <p class="description">
+      Don't have a DSpico? Pico Loader supports many other flashcarts out of the box, allowing you to enjoy the experience of Pico Loader on hardware you already own.
+    </p>
+    <p class="tagline">Lightning. Incredibly fast.</p>
+    <p class="final-line">Experience loading at a whole new speed.</p>
+
+    <div class="buttons">
+      <a href="https://github.com/LNH-team/pico-loader" class="btn build-btn">
+        <img src="assets/github-mark.png" style="width: 24px; height: 24px; vertical-align: middle; filter: invert(1);" alt="GitHub">
+        <span class="btn-text">Repository</span>
+      </a>
+    </div>
+
+    <div class="build-content hidden-content"></div>
+  </div>
+</section>
+
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,553 @@
+
+:root {
+  --primary: #f54886;
+  --secondary: white;
+  --background: #f5f7fa;
+  --card-bg: white;
+  --text-color: #333;
+  --radius: 16px;
+  --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif; /*font-family: "Segoe UI", sans-serif;*/
+  background: var(--background);
+  color: var(--text-color);
+}
+
+header {
+  background: var(--card-bg);
+  box-shadow: var(--shadow);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+@font-face {
+  font-family: "Typo_Dodam M";
+  src: url("../assets/fonts/Typo_Dodam_M.woff2") format("woff2"),
+       url("../assets/fonts/Typo_Dodam_M.woff") format("woff");
+  font-display: swap; 
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Logo y title */
+.logo-title {
+  display: flex;
+  flex-direction: row;    
+  align-items: center;
+  gap: 0.5rem;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.logo {
+  width: 60px;
+  height: auto;
+  margin-bottom: 0.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+/* Texto */
+.lead {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  max-width: 600px;
+  margin-bottom: 2rem;
+}
+
+.launcher-image {
+  image-rendering: pixelated;
+  border-radius: 1rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  margin: 2rem;
+  display: inline-block;
+}
+
+.description,
+.final-line {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  max-width: 600px;
+  margin-bottom: 1.5rem;
+}
+
+.tagline {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin: 2rem 0 1rem;
+  color: #555;
+}
+
+
+.buttons {
+  margin-top: 2rem;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #000;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 2rem;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background-color: #222;
+}
+
+/* Navbar layout */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 2rem;
+    background: #ffffff;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Left part (logo + title) */
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.logo-icon1 {
+    height: 32px;
+    width: auto;
+}
+
+.site-title {
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+/* Navigation links */
+.nav-links {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+    color: #d60087;
+}
+
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.hero img {
+  max-width: 200px;
+  border-radius: var(--radius);
+  margin: 1rem 0;
+}
+
+.buttons {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.buttons a {
+  padding: 1rem 2rem;
+  background: var(--primary);
+  color: white;
+  text-decoration: none;
+  border-radius: var(--radius);
+  font-weight: 600;
+  box-shadow: var(--shadow);
+  transition: background 0.3s;
+}
+
+.buttons a.secondary {
+  background: var(--secondary);
+  color: var(--text-color);
+}
+.buttons a.secondary:hover{
+  background-color: var(--primary);
+  color: white;
+}
+
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 20px;  
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
+
+section {
+  background: var(--card-bg);
+  text-align: center;
+  margin: 2rem auto;
+  border-radius: var(--radius);
+  padding: 2rem;
+  box-shadow: 0 8px 32px rgba(98, 98, 98, 0.18), 0 1.5px 8px rgba(0,0,0,0.18); 
+  max-width: 900px;
+  scroll-margin-top: 65px; /* space to compensate for the header height */
+  /* margin-inline: 16px; */
+
+}
+
+section h2 {
+  margin-top: 0;
+}
+
+.features ul {
+  padding-left: 1.2rem;
+}
+
+.community {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.community img {
+  width: 48px;
+  height: 48px;
+}
+
+@media (max-width: 600px) { 
+    header {
+        /* flex-direction: column; */
+        align-items: flex-start;
+    }
+    .buttons {
+        flex-direction: column;
+    }
+    .buttons a {
+        flex: 0 0 auto;
+        width: auto;            
+        align-self: center;   
+
+    }
+
+    .buttons a.secondary {
+        flex: 1 1 auto;         
+        width: auto;            
+        align-self: stretch;    
+        display: flex;          
+        flex-direction: row;    
+        justify-content: center; 
+        align-items: center;     
+        gap: 0.5rem;             
+        text-align: center;      
+    }
+    section {
+        margin-inline: 16px;
+        padding: 4rem 1rem;
+    }
+
+    /*INTRO*/
+      .intro-container {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .intro-buttons {
+      padding: 1.5rem 2rem;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+    }
+
+    .intro-btn {
+      flex: 1 1 auto;
+      justify-content: center;
+    }
+}
+
+.logo-title {
+    display: flex;
+    flex-direction: row;    
+    align-items: center;
+    gap: 0.5rem;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.logo-title h1 {
+    font-size: 3rem;    
+    font-family: "Typo_Dodam M", cursive;  
+    font-weight: normal;
+    margin: 0;
+}
+.logo-title h2 {
+    font-size: 1.5rem;    
+    font-family: "Typo_Dodam M", cursive;  
+    font-weight: normal;
+    margin: 0;
+}
+
+.logo-icon2 {
+  width: 70px;        
+  height: auto;
+}
+
+.responsive-img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+.dspico-img{
+    max-width: 200px; 
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+.features_table{
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: repeat(6, auto); 
+    gap: 10px; 
+}
+
+.item {
+
+  padding: 1rem;
+  text-align: center;
+  border-radius: 8px;
+}
+
+    /*INTRO*/
+.intro-section {
+  background: var(--card-bg);
+  border-radius: var(--radius);
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 1000px;
+  box-shadow: var(--shadow);
+}
+
+.intro-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.intro-left {
+  flex: 1 1 400px;
+  min-width: 300px;
+}
+
+.intro-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;      
+  justify-content: flex-start; 
+  flex: 1 1 300px;
+  text-align: center;
+  min-width: 150px;
+}
+
+.intro-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.intro-logo {
+  width: 40px;
+  height: auto;
+}
+
+.intro-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.intro-subtitle {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-top: 1rem;
+}
+
+.intro-description {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.intro-image {
+  max-width: 200px;
+  height: auto;
+  vertical-align: top; 
+}
+
+.intro-buttons {
+    padding: 1.5rem 2rem;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: nowrap;
+  margin-top: 2rem;
+  flex-direction: row;
+}
+
+.intro-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 2rem 1.5rem; 
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: var(--radius);
+  color: white;
+  white-space: nowrap;
+  box-shadow: var(--shadow);
+  font-size: 1.2rem; 
+  justify-content: center;
+}
+
+.intro-btn.pink {
+  background: var(--primary);
+}
+
+.intro-btn.purple {
+  background: var(--secondary);
+}
+
+.big-icon {
+  font-size: 2.5rem;
+}
+
+.nav-icon {
+  font-size: 1.5rem;
+}
+
+/*  Styles for dropdown content */
+.hidden-content {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  background: #ffffff;
+  border-radius: 1rem;
+  padding: 0 1.5rem;
+  margin-top: 0;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  transition: all 0.4s ease;
+  text-align: left;
+}
+
+.hidden-content.show {
+  max-height: 10000px; 
+  opacity: 1;
+  padding: 1.5rem;
+  margin-top: 1rem;
+}
+
+
+/*  Make all images within the README responsive */
+.build-content {
+  width: 100%;
+  overflow-x: auto; 
+  box-sizing: border-box;
+  word-wrap: break-word;
+}
+
+.build-content img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1rem auto;
+}
+
+
+.build-content table {
+  width: 100%;
+  overflow-x: auto;
+  display: block;
+  margin: 1rem 0;
+}
+
+.build-content pre,
+.build-content code {
+  background: #f5f5f5;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  overflow-x: auto;
+}
+
+
+
+
+
+
+/*For the markdown*/
+.build-content h1, 
+.build-content h2, 
+.build-content h3 {
+  margin-top: 1.5rem;
+  color: #222;
+}
+
+.build-content p {
+  line-height: 1.7;
+  margin: 0.8rem 0;
+}
+
+.build-content a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.build-content a:hover {
+  text-decoration: underline;
+}

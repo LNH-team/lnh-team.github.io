@@ -12,3 +12,5 @@ In 2022, we were offered an original Nintendo Game Boy development cartridge con
 
 During late 2020, we discovered that the Nintendo DS Lite had a leftover feature in its SoC allowing it to easily have hardware video output. With a little circuitry and some software hacks, we were able to restore it and make it usable for anyone! No FPGA's, no bulky or cumbersome hardware. Click [here](https://lostnintendohistory.github.io/DS-TV-OUT) to see the project page.
 
+#### DSpico
+In 2021, the idea for "an open-source flashcart" started to float around. 
